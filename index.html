@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./css/index.css">
+    <title>Amor mio</title>
+  </head>
+  <body>
+    <h1>Fecha de aniversario</h1>
+    <form id="formulario">
+        <input type="date" name="fecha" id="fecha">
+        <br>
+        <input type="button" value="Entrar" id="boton" onclick="validarFecha()">
+    </form>
+
+    <div id="container-modal">
+        <div id="content-modal">
+            <h2>Porque fallaste en nuestra fecha</h2>
+            <img src="" id="corazon">
+            <button id="cerrar" onclick="cerrarEmergente()"> cerrar</button>
+        </div>
+    </div>
+
+    <script src="./js/index.js"></script>
+  </body>
+</html>
