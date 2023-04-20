@@ -4,6 +4,13 @@ function formatoTiempo(valor) {
 }
 
 function pomodoro() {
+   
+  var miAudio = document.getElementById('mi-audio');
+  miAudio.addEventListener('loadedmetadata', function() {
+    miAudio.currentTime = 91; // Establece el tiempo en el segundo 60 (1 minuto)
+    miAudio.play(); // Reproduce el audio
+  });
+  
   clearInterval(pomodoro);
 
   // Crea dos objetos Date
