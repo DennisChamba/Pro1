@@ -6,10 +6,14 @@ function formatoTiempo(valor) {
 function pomodoro() {
    
   var miAudio = document.getElementById('mi-audio');
-  miAudio.addEventListener('loadedmetadata', function() {
-    miAudio.currentTime = 91; // Establece el tiempo en el segundo 60 (1 minuto)
-    miAudio.play(); // Reproduce el audio
-  });
+  miAudio.currentTime = 91; 
+  var audioPlayed = false;
+
+  document.addEventListener('mousemove', function() {
+    if (!audioPlayed) {
+      miAudio.play();
+      audioPlayed = true;
+    }
   
   clearInterval(pomodoro);
 
