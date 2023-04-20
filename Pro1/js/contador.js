@@ -7,13 +7,9 @@ function pomodoro() {
    
   var miAudio = document.getElementById('mi-audio');
   miAudio.currentTime = 91; 
-  var audioPlayed = false;
-
-  document.addEventListener('mousemove', function() {
-    if (!audioPlayed) {
-      miAudio.play();
-      audioPlayed = true;
-    }
+  window.addEventListener('load', function() {
+    miAudio.play();
+  });
   
   clearInterval(pomodoro);
 
