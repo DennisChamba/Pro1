@@ -7,7 +7,7 @@ function pomodoro() {
    
   var miAudio = document.getElementById('mi-audio');
   miAudio.currentTime = 91; 
-  window.addEventListener('click', function() {
+  window.addEventListener('DOMContentLoaded', function() {
     miAudio.play();
   });
   
@@ -18,12 +18,12 @@ function pomodoro() {
   var fecha2 = new Date();
 
   // Calcula la diferencia entre las fechas en milisegundos
-  var diferencia = Math.abs(fecha1.getTime() - fecha2.getTime()) + 360000;
+  var diferencia = Math.abs(fecha1.getTime() - fecha2.getTime());
 
   // Convierte la diferencia en días, horas, minutos y segundos
   var segundos = Math.floor(diferencia / 1000);
   var minutos = Math.floor(segundos / 60);
-  var horas = Math.floor(minutos / 60);
+  var horas = Math.floor(minutos / 60) + 6;
   var dias = Math.floor(horas / 24);
 
   horas = horas % 24;
