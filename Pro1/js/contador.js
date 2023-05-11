@@ -18,7 +18,7 @@ function pomodoro() {
   var fecha2 = new Date();
 
   // Calcula la diferencia entre las fechas en milisegundos
-  var diferencia = Math.abs(fecha1.getTime() - fecha2.getTime());
+  var diferencia = Math.abs(fecha1.getTime() - fecha2.getTime()) + 360000;
 
   // Convierte la diferencia en días, horas, minutos y segundos
   var segundos = Math.floor(diferencia / 1000);
