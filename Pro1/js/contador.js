@@ -7,7 +7,7 @@ function pomodoro() {
    
   var miAudio = document.getElementById('mi-audio');
   miAudio.currentTime = 91; 
-  window.addEventListener('DOMContentLoaded', function() {
+  window.addEventListener('click', function() {
     miAudio.play();
   });
   
